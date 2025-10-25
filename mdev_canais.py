@@ -58,6 +58,10 @@ if st.sidebar.button("HBO"):
     st.session_state.canal = "HBO"
 if st.sidebar.button("Telecine"):
     st.session_state.canal = "Telecine"
+if st.sidebar.button("UFC"):
+    st.session_state.canal = "UFC"
+
+
 
 canal = st.session_state.canal
 
@@ -74,6 +78,14 @@ elif canal == "Telecine":
     st.title("Telecine Action")
     iframe_code = """
     <iframe name="Player" src="https://redecanaistv.sh/assistir-telecine-action-online-24-horas-ao-vivo_74513ff1c.html" 
+    frameborder="0" height="400" scrolling="no" width="640" allow="encrypted-media" allowfullscreen></iframe>
+    """
+    st.markdown(iframe_code, unsafe_allow_html=True)
+
+elif canal == "UFC":
+    st.title("UFC")
+    iframe_code = """
+    <iframe name="Player" src="https://redecanaistv.sh/assistir-ufc-fight-pass-online-24-horas-ao-vivo_e15a0cfd6.html" 
     frameborder="0" height="400" scrolling="no" width="640" allow="encrypted-media" allowfullscreen></iframe>
     """
     st.markdown(iframe_code, unsafe_allow_html=True)
