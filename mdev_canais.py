@@ -132,7 +132,7 @@ if st.session_state.canal and st.session_state.link:
     st.title(st.session_state.canal)
     st.markdown(f"""
     <iframe name="Player" src="{st.session_state.link}" 
-    frameborder="0" height="400" scrolling="no" width="640" allow="encrypted-media" allowfullscreen></iframe>
+    frameborder="0" height="440" scrolling="no" width="680" allow="encrypted-media" allowfullscreen></iframe>
     """, unsafe_allow_html=True)
     st.markdown(f"📅 [Ver programação de {st.session_state.canal}]({st.session_state.guia})")
 else:
